@@ -5,12 +5,12 @@ window.addEventListener('DOMContentLoaded', (event) => {
         chrome.storage.local.get(['type'], function(result) {
             console.log('Value currently is ' + result.key);
         });
-        if (localStorage.getItem("type") == "homophobia"){
+        if (hrome.storage.local.get(['type']) == "homophobia"){
             document.getElementById('start').hidden = true;
             document.getElementById('homophobia').hidden = false;
             document.getElementById('hate').hidden = true;
         }
-        else if (localStorage.getItem("type") == "hate"){
+        else if (hrome.storage.local.get(['type'] == "hate"){
             document.getElementById('start').hidden = true;
             document.getElementById('homophobia').hidden = true;
             document.getElementById('hate').hidden = false;
